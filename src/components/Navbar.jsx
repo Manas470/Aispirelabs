@@ -23,6 +23,12 @@ const Navbar = () => {
               UseCases
             </p>
           </Link>
+          <Link to={"http://chat.aispirelabs.com/"}>
+  <p className="text-2xl hover:text-gray-300 transition-colors font-bold join-btn flex flex-col bg-blue-500 hover:bg-blue-700 text-white px-4 py-1 rounded">
+    Try Now
+  </p>
+</Link>
+
         </div>
       </div>
     </nav>
