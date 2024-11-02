@@ -23,7 +23,7 @@ const LandingPage = () => {
             &nbsp;&rarr;&nbsp;
             <span>Smart AI Assistants</span>
           </p>
-          <p className="text-xl text-black-600 mt-2 font-semibold">
+          <p className="text-xl text-black-600 mt-2  ml-[-5px]  font-semibold">
             we excite, engage and elevate your customer experience
           </p>
         </div>
@@ -48,7 +48,7 @@ const LandingPage = () => {
 
         </div>
       </div>
-      <div className="contact flex flex-row justify-center items-center p-6">
+      <div className="contact flex flex-row justify-center items-center p-15">
         <p className="copy-right">
           <span className="text-2xl">©</span>AISPIRE LABS
         </p>
