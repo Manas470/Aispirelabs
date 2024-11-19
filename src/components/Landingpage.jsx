@@ -90,20 +90,23 @@ const LandingPage = () => {
         </div>
       </div>
 
-      <div className="customer-logos mt-10 p-6">
-  <h2 className="text-2xl md:text-4xl font-bold text-center text-gray-800 mb-10">
-    Trusted by <span className="text-blue-600">Our Customers</span>
+      <div className="customer-logos mt-10 p-6 bg-gradient-to-b from-gray-50 to-gray-100 rounded-lg shadow-xl">
+  <h2 className="text-lg md:text-2xl font-semibold text-center text-gray-800 mb-4 tracking-wide">
+    Trusted by <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-teal-400">Our Customers</span>
   </h2>
-  <div className="flex items-center justify-center gap-6">
+  <div className="relative flex items-center justify-center gap-4">
+    {/* Previous Button */}
     <button
       onClick={handlePrev}
-      className="bg-blue-500 text-white px-5 py-3 rounded-full shadow-md hover:bg-blue-600 transition-transform transform hover:scale-105"
+      className="bg-blue-500 text-white px-4 py-2 rounded-full shadow-md hover:bg-blue-600 transition-transform transform hover:scale-105 z-10"
     >
       &larr;
     </button>
-    <div className="relative flex items-center gap-6 overflow-hidden w-full max-w-4xl">
+    
+    {/* Logos Section */}
+    <div className="relative flex items-center gap-4 overflow-hidden w-full max-w-4xl rounded-md bg-white p-4 shadow-md">
       <div
-        className="flex gap-6 transition-transform duration-500 ease-in-out"
+        className="flex gap-4 transition-transform duration-500 ease-in-out"
         style={{
           transform: `translateX(-${startIndex * (100 / itemsToShow)}%)`,
           width: `${(customerLogos.length / itemsToShow) * 100}%`,
@@ -117,15 +120,17 @@ const LandingPage = () => {
             <img
               src={logo}
               alt={`Customer ${index + 1}`}
-              className="w-full h-auto hover:opacity-80 hover:scale-110 transition-transform duration-300"
+              className="w-16 md:w-25 lg:w-24 h-auto rounded-lg shadow-md transform transition-transform duration-300 hover:scale-110"
             />
           </div>
         ))}
       </div>
     </div>
+    
+    {/* Next Button */}
     <button
       onClick={handleNext}
-      className="bg-blue-500 text-white px-5 py-3 rounded-full shadow-md hover:bg-blue-600 transition-transform transform hover:scale-105"
+      className="bg-blue-500 text-white px-4 py-2 rounded-full shadow-md hover:bg-blue-600 transition-transform transform hover:scale-105 z-100"
     >
       &rarr;
     </button>
@@ -137,11 +142,13 @@ const LandingPage = () => {
         <p className="copy-right">
           <span className="text-2xl">©</span>AISPIRE LABS
         </p>
+        <hr></hr> <hr></hr> <hr></hr> <hr></hr> <hr></hr>
         <Link to={"https://tally.so/r/mV9VPN"}>
-          <p className="copy-right">
-            <u>Work with us</u>
-          </p>
-        </Link>
+  <p className="copy-right text-center text-blue-600 font-semibold text-lg underline decoration-dotted decoration-blue-400 hover:decoration-solid transition-all duration-300 hover:text-blue-800 hover:scale-105">
+    Work with us
+  </p>
+</Link>
+
       </div>
     </div>
   );
