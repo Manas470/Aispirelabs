@@ -56,22 +56,27 @@ const LandingPage = () => {
           </p>
         </div>
       </div>
+      <div className="join-btn flex flex-row items-center justify-center gap-3 p-4">
+  <Link to="/join-waitlist">
+    <button className="px-4 py-2 bg-purple-600 text-white text-base font-medium rounded-md hover:bg-purple-700 transition duration-300 shadow-md whitespace-nowrap">
+      JOIN WAITLIST
+    </button>
+  </Link>
+  <a
+    href="https://calendly.com/aispirelabs/book-demo"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <button className="px-4 py-2 bg-blue-600 text-white text-base font-medium rounded-md hover:bg-blue-700 transition duration-300 shadow-md whitespace-nowrap">
+      BOOK A DEMO
+    </button>
+  </a>
+</div>
 
-      <div className="join-btn flex flex-row items-center justify-center gap-4 p-6 md:p-10">
-        <Link to="/join-waitlist">
-          <button className="px-6 py-3 bg-purple-600 text-white text-lg font-semibold rounded-lg hover:bg-purple-700 transition duration-300 shadow-md w-full md:w-auto">
-            JOIN WAITLIST
-          </button>
-        </Link>
-        <a
-          href="https://calendly.com/aispirelabs/book-demo"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="px-6 py-3 bg-blue-600 text-white text-lg font-semibold rounded-lg hover:bg-blue-700 transition duration-300 shadow-md w-full md:w-auto"
-        >
-          BOOK A DEMO
-        </a>
-      </div>
+
+
+
+
 
       <div className="core-team">
         <div className="flex flex-col md:flex-row justify-center items-center mt-6 md:mt-10 p-4 md:p-8 space-y-4 md:space-y-0">
@@ -143,7 +148,7 @@ const LandingPage = () => {
           <span className="text-2xl">©</span>AISPIRE LABS
         </p>
         <hr></hr> <hr></hr> <hr></hr> <hr></hr> <hr></hr>
-        <Link to={"https://tally.so/r/mV9VPN"}>
+ <Link to={"https://tally.so/r/mV9VPN"}>
   <p className="copy-right text-center text-blue-600 font-semibold text-lg underline decoration-dotted decoration-blue-400 hover:decoration-solid transition-all duration-300 hover:text-blue-800 hover:scale-105">
     Work with us
   </p>

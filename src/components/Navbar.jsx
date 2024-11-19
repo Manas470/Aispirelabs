@@ -95,13 +95,13 @@ const Navbar = () => {
               UseCases
             </Link>
             <a 
-              href="https://calendly.com/aispirelabs/book-demo"
+              href="https://sara.aispirelabs.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="block px-4 py-2 text-lg font-semibold text-white bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg text-center"
+              className="block px-0 py-2 text-lg font-semibold text-white bg-gradient-to-r from-blue-600 to-purple-600 rounded-full transition-all text-center"
               onClick={() => setIsMenuOpen(false)}
             >
-              Book a Demo
+              Try Sara
             </a>
           </div>
         </div>
